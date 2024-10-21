@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .app-container {
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .header .back-arrow {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .header .title {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 1.2em;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+        }
+        .section-content:last-child {
+            border-bottom: none;
+        }
+        .section-content .edit-link {
+            color: #00bcd4;
+            cursor: pointer;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .info-row div:first-child {
+            flex-grow: 1;
+        }
+        .career-section .info-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <!-- Header -->
+    <div class="header">
+        <a href="Sofi.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+        <div class="title">My Info</div>
+        <i class="fas fa-eye"></i>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="section">
+        <div class="section-title">About me</div>
+        <div class="info-row">
+            <div>
+                <div>Legal name <i class="fas fa-info-circle"></i></div>
+                <div>Jabriel Nasir Muhammad</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="section">
+        <div class="section-title">Contact info</div>
+        <div class="section-content">
+            <div class="info-row">
+                <div>
+                    <div>Home address</div>
+                    <div>1535 W STILES ST<br>PHILADELPHIA, PA 19121-5111</div>
+                </div>
+                <div class="edit-link">Edit</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="info-row">
+                <div>
+                    <div>Mailing address</div>
+                    <div>6907 WAXWING PL<br>PHILADELPHIA, PA 19142-2513</div>
+                </div>
+                <div class="edit-link">Edit</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="info-row">
+                <div>
+                    <div>Mobile phone</div>
+                    <div>(215) 805-0594</div>
+                </div>
+                <div class="edit-link">Edit</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="info-row">
+                <div>Email</div>
+                <div>jabrielm92@gmail.com</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Career Section -->
+    <div class="section career-section">
+        <div class="section-title">Career</div>
+        <div class="section-content">
+            <div class="info-row">
+                <div>
+                    <div>Current employment</div>
+                    <div>Self-Employed<br>Transportation / Shipping / Moving / Logistics</div>
+                </div>
+                <div class="edit-link">Edit</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

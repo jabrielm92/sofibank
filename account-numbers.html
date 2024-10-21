@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Numbers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .app-container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .header .back-arrow {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .header .title {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 1.2em;
+        }
+        .section-heading {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+        .account-numbers {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .account-numbers .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .account-numbers .row i {
+            cursor: pointer;
+            color: #bbb;
+        }
+        .account-management {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .account-management .option {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+        }
+        .account-management .option:last-child {
+            border-bottom: none;
+        }
+        .account-management .option i {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <!-- Header -->
+    <div class="header">
+        <a href="Sofi.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+        <div class="title">Account Numbers</div>
+        <i class="fas fa-eye"></i>
+    </div>
+
+    <!-- Account Numbers Section Heading -->
+    <div class="section-heading">Account numbers</div>
+
+    <!-- Account Numbers Section -->
+    <div class="account-numbers">
+        <div class="row">
+            <div>Routing</div>
+            <div>
+                031101334 <i class="fas fa-copy"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>Checking</div>
+            <div>
+                411022998448 <i class="fas fa-copy"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>Savings</div>
+            <div>
+                310030046398 <i class="fas fa-copy"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Management Section Heading -->
+    <div class="section-heading">Account management</div>
+
+    <!-- Account Management Section -->
+    <div class="account-management">
+        <div class="option">
+            <div>Beneficiaries</div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="option">
+            <div>Joint account holder</div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="option">
+            <div>Linked bank accounts</div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="option">
+            <div>Notifications and alerts</div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="option">
+            <div>Order checks</div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
