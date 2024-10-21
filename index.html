@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking - 8448</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .app-container {
+            padding: 20px;
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .balance {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .balance-info {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .balance-info span {
+            display: block;
+            color: #888;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .action-buttons div {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .action-buttons div:hover {
+            transform: scale(1.1);
+        }
+        .action-buttons div i {
+            display: block;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+        .cards, .activity {
+            padding: 15px;
+            background-color: #222;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .activity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #111;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .tab.active {
+            background-color: #444;
+            border-radius: 20px;
+        }
+        .activity-list {
+            text-align: center;
+        }
+        .activity-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        .transaction-details {
+            color: #bbb;
+        }
+        /* Button styling */
+        .circle-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .circle-button:hover {
+            background-color: #666;
+        }
+        .circle-button i {
+            color: white;
+            font-size: 10px;
+        }
+
+        /* Profile button */
+        .profile-button {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .profile-button:hover {
+            background-color: #666;
+        }
+        .profile-button i {
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <!-- Header -->
+    <div class="header">
+        <div>Banking</div>
+        <div>Checking • 8448</div>
+        <!-- Profile button for navigation to My Info (Left corner) -->
+        <a href="my-info.html" class="profile-button">
+            <i class="fas fa-user"></i>
+        </a>
+        <!-- Circle button for account numbers (Right corner) -->
+        <a href="account-numbers.html" class="circle-button">
+            <i class="fas fa-ellipsis-h"></i>
+        </a>
+    </div>
+
+    <!-- Balance Display -->
+    <div class="balance">$6,063.64</div>
+    <div class="balance-info">
+        <span>Available balance</span>
+        <span>Current APY: 0.50%</span>
+        <span>Balance incl. pending: $6,063.64</span>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <div>
+            <i class="fas fa-exchange-alt"></i>
+            <span>Transfer</span>
+        </div>
+        <div>
+            <i class="fas fa-arrow-down"></i>
+            <span>Deposit</span>
+        </div>
+        <div>
+            <i class="fas fa-arrow-up"></i>
+            <span>Pay</span>
+        </div>
+        <div>
+            <i class="fas fa-bolt"></i>
+            <span>Zelle</span>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards">
+        <div>Debit card</div>
+    </div>
+
+    <!-- Activity Section -->
+    <div class="activity">
+        <div class="activity-header">
+            <div>Activity</div>
+            <div>Statements &gt;</div>
+        </div>
+        <div class="tabs">
+            <div class="tab active">All</div>
+            <div class="tab">Scheduled</div>
+        </div>
+        <div class="activity-list">
+            <div class="activity-item">
+                <div>FANDUELSBKPRIMARY</div>
+                <div class="transaction-details">- $50.00</div>
+            </div>
+            <div class="activity-item">
+                <div>TST* LINVILLA ORCHARD</div>
+                <div class="transaction-details">- $17.28</div>
+            </div>
+            <div class="activity-item">
+                <div>DD *DOORDASH EDS</div>
+                <div class="transaction-details">- $18.50</div>
+            </div>
+            <div class="activity-item">
+                <div>BESTBUY.COM</div>
+                <div class="transaction-details">- $234.55</div>
+            </div>
+            <div class="activity-item">
+                <div>COMCAST</div>
+                <div class="transaction-details">- $132.40</div>
+            </div>
+            <div class="activity-item">
+                <div>OFFICE MAX/OFI 7231 RO</div>
+                <div class="transaction-details">- $26.99</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
